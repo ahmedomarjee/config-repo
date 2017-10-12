@@ -1,0 +1,18 @@
+info:
+  app:
+    name: Ping Service
+
+server:  
+  port: ${PORT:9000}
+
+---
+
+spring:
+  profiles: development
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+debug: true

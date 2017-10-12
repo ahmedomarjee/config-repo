@@ -1,0 +1,20 @@
+info:
+  app:
+    name: Service Registry
+
+server:
+  port: ${PORT:8761}
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    healthcheck:
+      enabled: false
+
+---
+
+spring:
+  profiles: development
+  
+debug: true

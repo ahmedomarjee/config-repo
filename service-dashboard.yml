@@ -1,0 +1,18 @@
+info:
+  app:
+    name: Service Dashboard
+
+server:  
+  port: ${PORT:8762}
+
+---
+
+spring:
+  profiles: development
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+debug: true
